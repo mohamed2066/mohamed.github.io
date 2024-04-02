@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h2{
+            text-align: center;
+           font-weight: 900;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+           text-align: right;
+           font-weight: 900;
+        }
+        input[type="text"], input[type="date"], input[type="file"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<h2>نموذج التسجيل</h2>
+
+<form action="/submit_form" method="post">
+  <label for="name">الاسم</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="dob">تاريخ الميلاد</label><br>
+  <input type="date" id="dob" name="dob"><br>
+  <label for="country">الدولة</label><br>
+  <select id="country" name="country">
+    <option value="Saudi Arabia">المملكة العربية السعودية</option>
+    <option value="United Arab Emirates">الإمارات العربية المتحدة</option>
+    <option value="Egypt">مصر</option>
+    <!-- يمكنك إضافة المزيد من الخيارات هنا -->
+  </select><br>
+  <label for="phone">رقم الجوال</label><br>
+  <input type="text" id="phone" name="phone"><br>
+  <label for="email">البريد الإلكتروني</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="file">تحميل الملف</label><br>
+  <input type="file" id="file" name="file"><br>
+  <input type="submit" value="إرسال">
+</form>
+
+</body>
+</html>
